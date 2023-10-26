@@ -10,7 +10,14 @@ import okhttp3.OkHttpClient
  */
 interface NetworkHelper {
 
+    /**
+     * cookie 全局
+     */
     val cookieManager: AndroidCookieJar
+
+    /**
+     * 各种 UA
+     */
     val defaultLinuxUA: String
     val defaultAndroidUA: String
     val randomUA: String
