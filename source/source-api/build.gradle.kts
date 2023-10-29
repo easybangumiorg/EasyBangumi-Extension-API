@@ -159,6 +159,5 @@ dependencies {
     compileOnly(libs.kotlin.coroutines.android)
     compileOnly(libs.okhttp3)
     compileOnly(androidx.annotation)
-    compileOnly(libs.koin)
     api(extension.source.utils)
 }

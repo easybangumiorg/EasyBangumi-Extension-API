@@ -2,6 +2,7 @@ package com.heyanle.easybangumi4.source_api.entity
 
 import androidx.annotation.Keep
 import java.io.Serializable
+import java.net.URLEncoder
 
 /**
  * Created by HeYanLe on 2023/10/18 23:16.

@@ -7,6 +7,8 @@ package com.heyanle.easybangumi4.source_api.utils.api
  */
 interface PreferenceHelper {
 
+    fun map(): Map<String, String>
+    
     fun get(key: String, def: String): String
 
     fun put(key: String, value: String)
