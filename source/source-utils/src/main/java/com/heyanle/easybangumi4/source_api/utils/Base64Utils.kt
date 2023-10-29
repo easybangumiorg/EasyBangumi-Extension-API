@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.utils.core
+package com.heyanle.easybangumi4.source_api.utils
 
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException

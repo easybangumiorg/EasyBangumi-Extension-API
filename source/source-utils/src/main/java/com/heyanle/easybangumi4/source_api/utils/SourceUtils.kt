@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.utils.core
+package com.heyanle.easybangumi4.source_api.utils
 
 object SourceUtils {
     fun urlParser(rootURL: String, source: String): String {
