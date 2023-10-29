@@ -8,14 +8,7 @@ import com.heyanle.easybangumi4.source_api.utils.core.network.AndroidCookieJar
  */
 interface NetworkHelper {
 
-    /**
-     * cookie 全局
-     */
     val cookieManager: AndroidCookieJar
-
-    /**
-     * 各种 UA
-     */
     val defaultLinuxUA: String
     val defaultAndroidUA: String
     val randomUA: String

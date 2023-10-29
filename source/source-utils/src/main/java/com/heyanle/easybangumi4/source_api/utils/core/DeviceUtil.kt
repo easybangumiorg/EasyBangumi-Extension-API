@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.utils
+package com.heyanle.easybangumi4.source_api.utils.core
 
 import android.annotation.SuppressLint
 import android.os.Build

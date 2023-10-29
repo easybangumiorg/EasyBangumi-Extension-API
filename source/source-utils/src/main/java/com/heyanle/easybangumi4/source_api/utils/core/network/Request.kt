@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.utils
+package com.heyanle.easybangumi4.source_api.utils.core.network
 
 import okhttp3.CacheControl
 import okhttp3.FormBody
