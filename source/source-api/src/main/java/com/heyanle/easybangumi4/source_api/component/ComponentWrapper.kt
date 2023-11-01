@@ -6,7 +6,7 @@ import com.heyanle.easybangumi4.source_api.Source
  * Created by HeYanLe on 2023/10/29 21:44.
  * https://github.com/heyanLE
  */
-class ComponentWrapper() : Component {
+open class ComponentWrapper() : Component {
 
     lateinit var innerSource: Source
 
