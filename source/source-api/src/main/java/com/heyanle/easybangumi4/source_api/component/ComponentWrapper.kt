@@ -10,8 +10,6 @@ class ComponentWrapper() : Component {
 
     lateinit var innerSource: Source
 
-
-
     override val source: Source
         get() = innerSource
 }

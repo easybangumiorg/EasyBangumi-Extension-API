@@ -1,6 +1,9 @@
 package com.heyanle.easybangumi4.source_api
 
 import androidx.annotation.Keep
+import kotlinx.coroutines.withContext
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.EmptyCoroutineContext
 
 @Keep
 sealed class SourceResult<T> {
@@ -27,3 +30,27 @@ sealed class SourceResult<T> {
         return this
     }
 }
+
+@Keep
+suspend fun <T> withResult(
+    context: CoroutineContext = EmptyCoroutineContext,
+    block: suspend () -> T
+): SourceResult<T> {
+    return try {
+        withContext(context) {
+            SourceResult.Complete(block())
+        }
+    } catch (e: ParserException) {
+        e.printStackTrace()
+        SourceResult.Error<T>(e, true)
+    } catch (e: Exception) {
+        e.printStackTrace()
+        SourceResult.Error<T>(e, false)
+    }
+
+}
+
+@Keep
+class ParserException(
+    override val message: String?
+) : Exception()
