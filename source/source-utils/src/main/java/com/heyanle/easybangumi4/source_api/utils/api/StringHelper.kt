@@ -7,6 +7,11 @@ package com.heyanle.easybangumi4.source_api.utils.api
 interface StringHelper {
 
     /**
+     * 展示纯纯看番样式对话框通知
+     */
+    fun moeDialog(text: String, title: String? = null)
+
+    /**
      * 展示纯纯看番样式站内通知
      */
     fun moeSnackBar(string: String)
