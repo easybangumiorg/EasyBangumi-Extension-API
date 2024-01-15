@@ -5,18 +5,18 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
 
-name: maven-publish
+name: ubuntu-latest
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "release" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "release" ]
 
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -44,7 +44,11 @@ jobs:
         
     # 发布项目
     - name: Publish
-      run: ./gradlew publish
+      run: |
+        chmod +x ./gradlew
+        ./gradlew :source:source-utils:publish
+        ./gradlew :source:source-api:publish
+        ./gradlew :extension:extension-api
       env:
         OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
         OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
