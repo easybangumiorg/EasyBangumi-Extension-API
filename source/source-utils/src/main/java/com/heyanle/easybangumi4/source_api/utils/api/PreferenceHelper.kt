@@ -7,6 +7,9 @@ package com.heyanle.easybangumi4.source_api.utils.api
  */
 interface PreferenceHelper {
 
+    /**
+     * 获取所有存储的键值对（无序）
+     */
     fun map(): Map<String, String>
     
     fun get(key: String, def: String): String

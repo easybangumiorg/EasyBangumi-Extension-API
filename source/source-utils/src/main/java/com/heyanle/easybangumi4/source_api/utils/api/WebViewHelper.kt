@@ -8,6 +8,12 @@ import android.webkit.WebView
  */
 interface WebViewHelper {
 
+    /**
+     * 开启一个 WebView 页面
+     * @param check 每两秒轮询一次，如果返回 true 则关闭当前页面
+     * @param stop 用户退出时回调
+     * @return 网页源码
+     */
     fun start(
         webView: WebView,
         check: (WebView) -> Boolean,
@@ -16,7 +22,7 @@ interface WebViewHelper {
 
     /**
      * 开启一个 WebView 页面
-     * @check 每两秒轮询一次，如果返回 true 则关闭当前页面
+     * @param check 每两秒轮询一次，如果返回 true 则关闭当前页面
      * @return 网页源码
      */
     suspend fun start(

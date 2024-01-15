@@ -50,11 +50,10 @@ class NetworkHelperImpl(
         kotlin.runCatching {
             WebView(context).getDefaultUserAgentString()
         }.getOrElse {
-            Log.e("NetworkHelper", "test")
+            Log.e("NetworkHelper", "DefaultUAGetFailed!")
             it.printStackTrace()
             onWebViewError()
             "Mozilla/5.0 (Linux; Android 13; RMX3551 Build/SKQ1.220617.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36"
-
         }
     }
 
@@ -63,7 +62,6 @@ class NetworkHelperImpl(
     override val defaultAndroidUA: String
         get() = defaultUA
     override val randomUA: String
-        get() = USER_AGENT_ARRAY.run { get(Random.nextInt(size)) }
-
+        get() = USER_AGENT_ARRAY.random()
 
 }
