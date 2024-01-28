@@ -5,7 +5,7 @@ import com.heyanle.easybangumi4.SourceResult
 import com.heyanle.easybangumi4.source_api.component.Component
 import com.heyanle.easybangumi4.source_api.entity.Cartoon
 import com.heyanle.easybangumi4.source_api.entity.CartoonSummary
-import com.heyanle.easybangumi4.source_api_v2.entity.PlayLine
+import com.heyanle.easybangumi4.source_api.entity.PlayLine
 
 /**
  * Created by HeYanLe on 2023/10/18 23:26.
