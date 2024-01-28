@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.entity
+package com.heyanle.easybangumi4.source_api_v2.entity
 
 import androidx.annotation.Keep
 
@@ -20,9 +20,7 @@ open class PlayLine(
 
         if (id != other.id) return false
         if (label != other.label) return false
-        if (episode != other.episode) return false
-
-        return true
+        return episode == other.episode
     }
 
     override fun hashCode(): Int {
@@ -47,9 +45,7 @@ open class Episode(
 
         if (id != other.id) return false
         if (label != other.label) return false
-        if (order != other.order) return false
-
-        return true
+        return order == other.order
     }
 
     override fun hashCode(): Int {

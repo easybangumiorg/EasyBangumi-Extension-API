@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api.component
+package com.heyanle.easybangumi4.source_api_v2.component
 
 import com.heyanle.easybangumi4.source_api_v2.Source
 

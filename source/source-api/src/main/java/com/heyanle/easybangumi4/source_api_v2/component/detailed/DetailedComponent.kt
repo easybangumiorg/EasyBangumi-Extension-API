@@ -1,10 +1,9 @@
-package com.heyanle.easybangumi4.source_api.component.detailed
+package com.heyanle.easybangumi4.source_api_v2.component.detailed
 
 
 import com.heyanle.easybangumi4.SourceResult
-import com.heyanle.easybangumi4.source_api.component.Component
-import com.heyanle.easybangumi4.source_api.entity.Cartoon
-import com.heyanle.easybangumi4.source_api.entity.CartoonSummary
+import com.heyanle.easybangumi4.source_api_v2.component.Component
+import com.heyanle.easybangumi4.source_api_v2.entity.Cartoon
 import com.heyanle.easybangumi4.source_api_v2.entity.PlayLine
 
 /**
@@ -20,20 +19,20 @@ interface DetailedComponent: Component {
      * 获取番剧详细信息
      */
     suspend fun getDetailed(
-        summary: CartoonSummary
+        cartoon: Cartoon
     ): SourceResult<Cartoon>
 
     /**
      * 获取播放线路
      */
     suspend fun getPlayLine(
-        summary: CartoonSummary
+        cartoon: Cartoon
     ): SourceResult<List<PlayLine>>
 
     /**
      * 同时获取
      */
     suspend fun getAll(
-        summary: CartoonSummary
+        cartoon: Cartoon
     ): SourceResult<Pair<Cartoon, List<PlayLine>>>
 }

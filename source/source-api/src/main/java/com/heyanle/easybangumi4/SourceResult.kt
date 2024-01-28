@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api
+package com.heyanle.easybangumi4
 
 import androidx.annotation.Keep
 import kotlinx.coroutines.withContext

@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api
+package com.heyanle.easybangumi4.source_api_v2
 
 import com.heyanle.easybangumi4.source_api.entity.Cartoon
 import java.net.URLEncoder
