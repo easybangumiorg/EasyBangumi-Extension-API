@@ -48,7 +48,7 @@ jobs:
         chmod +x ./gradlew
         ./gradlew :source:source-utils:publish
         ./gradlew :source:source-api:publish
-        ./gradlew :extension:extension-api
+        ./gradlew :extension:extension-api:publish
       env:
         OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
         OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
