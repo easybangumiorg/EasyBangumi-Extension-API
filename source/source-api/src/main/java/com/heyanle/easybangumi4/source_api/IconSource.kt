@@ -1,4 +1,4 @@
-package com.heyanle.easybangumi4.source_api_v2
+package com.heyanle.easybangumi4.source_api
 
 import android.graphics.drawable.Drawable
 import androidx.annotation.Keep

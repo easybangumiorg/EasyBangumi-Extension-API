@@ -1,6 +1,7 @@
 package com.heyanle.easybangumi4.source_api.component
 
-import com.heyanle.easybangumi4.source_api_v2.Source
+import com.heyanle.easybangumi4.source_api.Source
+
 
 /**
  * Created by HeYanLe on 2023/10/29 21:44.

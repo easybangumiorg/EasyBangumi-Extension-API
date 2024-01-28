@@ -8,6 +8,9 @@ import android.webkit.WebView
  */
 interface WebViewHelper {
 
+
+    fun getGlobalWebView(): WebView
+
     /**
      * 开启一个 WebView 页面
      * @param check 每两秒轮询一次，如果返回 true 则关闭当前页面

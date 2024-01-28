@@ -8,16 +8,15 @@ import java.io.Serializable
  * https://github.com/heyanLE
  */
 @Keep
-class CartoonSummary(
+data class CartoonSummary(
     var id: String,              // 标识，由源自己支持，用于区分番剧
     var source: String,
-    var url: String,
 ) : Serializable {
 
     fun isChild(
         cartoon: Cartoon
     ): Boolean{
-        return id == cartoon.id && source == cartoon.source && url == cartoon.url
+        return id == cartoon.id && source == cartoon.source
     }
 
 
@@ -29,7 +28,6 @@ class CartoonSummary(
 
         if (id != other.id) return false
         if (source != other.source) return false
-        if (url != other.url) return false
 
         return true
     }
@@ -37,7 +35,6 @@ class CartoonSummary(
     override fun hashCode(): Int {
         var result = id.hashCode()
         result = 31 * result + source.hashCode()
-        result = 31 * result + url.hashCode()
         return result
     }
 
