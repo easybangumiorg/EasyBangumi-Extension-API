@@ -1,7 +1,7 @@
 package com.heyanle.easybangumi4.source_api.component.update
 
 
-import com.heyanle.easybangumi4.SourceResult
+import com.heyanle.easybangumi4.source_api.SourceResult
 import com.heyanle.easybangumi4.source_api.component.Component
 import com.heyanle.easybangumi4.source_api.entity.Cartoon
 import com.heyanle.easybangumi4.source_api.entity.PlayLine

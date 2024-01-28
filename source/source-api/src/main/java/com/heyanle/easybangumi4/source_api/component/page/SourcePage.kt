@@ -1,7 +1,7 @@
 package com.heyanle.easybangumi4.source_api.component.page
 
 import androidx.annotation.Keep
-import com.heyanle.easybangumi4.SourceResult
+import com.heyanle.easybangumi4.source_api.SourceResult
 import com.heyanle.easybangumi4.source_api.entity.CartoonCover
 
 /**
