@@ -9,11 +9,11 @@ import java.net.URLEncoder
  */
 
 fun CartoonCover.toIdentify(): String {
-    return "${id},${source},${URLEncoder.encode(url, "utf-8")}"
+    return "${id},${source}"
 }
 
 fun Cartoon.toIdentify(): String {
-    return "${id},${source},${URLEncoder.encode(url, "utf-8")}"
+    return "${id},${source}"
 }
 
 fun CartoonCover.matchIdentify(identify: String): Boolean {
