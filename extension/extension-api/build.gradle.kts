@@ -60,7 +60,6 @@ runCatching {
 afterEvaluate {
     publishing {
         publications {
-            extension.extension
             create("maven_public", MavenPublication::class) {
                 groupId = "io.github.easybangumiorg"
                 artifactId = "extension-api"
