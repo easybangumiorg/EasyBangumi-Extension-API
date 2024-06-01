@@ -5,6 +5,6 @@ package com.heyanle.extension_api
  */
 interface NativeSupportedSource {
 
-    fun getSoFileName(): List<String>
+    fun dependSoName(): List<String>
 
 }
