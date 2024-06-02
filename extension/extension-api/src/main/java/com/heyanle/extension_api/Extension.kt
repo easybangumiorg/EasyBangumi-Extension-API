@@ -12,12 +12,12 @@ abstract class Extension : SourceFactory {
     var bundle: ExtensionBundle? = null
 
     // 可能会多次调用，如果需要加载 so 包记得加 try catch
-    fun onInit(
+    open fun onInit(
         application: Application,
     ){
     }
 
-    fun onDestroy(){}
+    open fun onDestroy(){}
 
 
 }
