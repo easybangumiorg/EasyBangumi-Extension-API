@@ -1,4 +1,4 @@
-package com.heyanle.extension_api
+package com.heyanle.extension_core
 
 /**
  * Created by heyanle on 2024/6/2.
