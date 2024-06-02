@@ -38,3 +38,4 @@ rootProject.name = "EasyBangumi-Extension-API"
 include(":source:source-utils")
 include(":source:source-api")
 include(":extension:extension-api")
+include(":extension:extension-core")
