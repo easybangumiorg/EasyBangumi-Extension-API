@@ -143,12 +143,6 @@ afterEvaluate {
 
 
 dependencies {
-    api(extension.extension.api)
-    api(extension.source.api)
-    api(extension.source.utils)
-    api(libs.kotlin.coroutines.android)
-    api(libs.okhttp3)
-    api(libs.gson)
-    api(libs.jsoup)
+   
 
 }
