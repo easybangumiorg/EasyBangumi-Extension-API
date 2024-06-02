@@ -6,8 +6,13 @@ package com.heyanle.extension_api
  */
 class NativeLoadService {
 
-    fun load(path: String){
-        System.load(path)
+    companion object {
+        @JvmStatic
+        fun load(path: String){
+            System.load(path)
+        }
     }
+
+
 
 }
