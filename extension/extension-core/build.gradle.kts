@@ -62,7 +62,7 @@ afterEvaluate {
         publications {
             create("maven_public", MavenPublication::class) {
                 groupId = "io.github.easybangumiorg"
-                artifactId = "extension-api"
+                artifactId = "extension-core"
                 version = extension.versions.extensions.get()
                 from(components.getByName("release"))
 
