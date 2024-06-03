@@ -2,13 +2,12 @@ package com.heyanle.extension_api
 
 import android.app.Application
 import com.heyanle.easybangumi4.source_api.SourceFactory
-import com.heyanle.extension_api.client.NativeLoadClient
 
 /**
  * Created by heyanle on 2024/6/2.
  * https://github.com/heyanLE
  */
-abstract class Extension : SourceFactory, NativeLoadClient {
+abstract class Extension : SourceFactory {
 
     var bundle: ExtensionBundle? = null
 
