@@ -1,6 +1,6 @@
 package com.heyanle.easybangumi4.source_api.utils.api
 
-import com.heyanle.easybangumi4.source_api.utils.core.network.AndroidCookieJar
+import com.heyanle.easybangumi4.source_api.utils.core.AndroidCookieJar
 
 /**
  * Created by HeYanLe on 2023/10/18 23:51.
