@@ -6,6 +6,7 @@ import android.webkit.WebView
  * Created by HeYanLe on 2023/10/18 23:58.
  * https://github.com/heyanLE
  */
+@Deprecated("Use RenderedHelper instead")
 interface WebViewHelper {
 
 

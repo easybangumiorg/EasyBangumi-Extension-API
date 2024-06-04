@@ -31,26 +31,20 @@ android {
 
     buildTypes {
         release {
-            postprocessing {
-                isRemoveUnusedCode = false
-                isRemoveUnusedResources = false
-                isObfuscate = false
-                isOptimizeCode = false
-                proguardFiles("proguard-rules.pro")
-            }
+            isMinifyEnabled = false
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
 
 val publishingProps = Properties()
