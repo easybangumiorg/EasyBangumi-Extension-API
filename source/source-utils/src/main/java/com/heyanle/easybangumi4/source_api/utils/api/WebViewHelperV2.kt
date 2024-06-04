@@ -26,8 +26,8 @@ interface WebViewHelperV2 {
         // 在页面加载完成后执行的js代码，可用于主动加载资源，如让视频加载出来以拦截
         val actionJs: String? = null,
 
-        // 是否需要blob
-        val needBlob: Boolean = false,
+        // 是否是拦截 blob 模式
+        val isBlockBlob: Boolean = false,
 
         // 加载超时。当超过超时时间后还没返回数据则会直接返回当前源码
         val timeOut: Long = 8000L,
