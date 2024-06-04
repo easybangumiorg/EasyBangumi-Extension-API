@@ -60,7 +60,7 @@ interface WebViewHelperV2 {
         onStop: (WebView) -> Unit,
     )
 
-    fun openWevPage(
+    fun openWebPage(
         webView: WebView,
         onCheck: (WebView) -> Boolean,
         onStop: (WebView) -> Unit,
