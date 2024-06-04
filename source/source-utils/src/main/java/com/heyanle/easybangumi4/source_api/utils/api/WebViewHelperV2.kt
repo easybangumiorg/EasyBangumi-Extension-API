@@ -56,13 +56,13 @@ interface WebViewHelperV2 {
     fun getGlobalWebView(): WebView
 
     fun openWebPage(
-        onCheck: (WebView) -> Unit,
+        onCheck: (WebView) -> Boolean,
         onStop: (WebView) -> Unit,
     )
 
     fun openWevPage(
         webView: WebView,
-        onCheck: (WebView) -> Unit,
+        onCheck: (WebView) -> Boolean,
         onStop: (WebView) -> Unit,
     )
 
